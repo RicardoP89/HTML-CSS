@@ -13,6 +13,15 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
         td, th{
             border: 1px solid black;
             padding: 7px;
@@ -35,10 +44,11 @@
            TFOOT (Pé)
     -->
     <table>
+        <caption>População das Unidades Federativas</caption> <!--Legenda da Tabela-->
         <thead>
             <tr>
                 <th>Estado</th>
-                <th>População</th>
+                <th style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
